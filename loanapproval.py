@@ -25,14 +25,14 @@ st.header("Enter Loan Details")
 
 # Numerical features
 no_of_dependents = st.number_input("Number of Dependents", min_value=0, max_value=20)
-income_annum = st.number_input("Annual Income (in USD)", min_value=0)
-loan_amount = st.number_input("Loan Amount (in USD)", min_value=0)
-loan_term = st.number_input("Loan Term (in months)", min_value=1)
+income_annum = st.number_input("Annual Income", min_value=0)
+loan_amount = st.number_input("Loan Amount", min_value=0)
+loan_term = st.number_input("Loan Term (in years)", min_value=1)
 cibil_score = st.number_input("CIBIL Score", min_value=300, max_value=900)
-residential_assets_value = st.number_input("Residential Assets Value (in USD)", min_value=0)
-commercial_assets_value = st.number_input("Commercial Assets Value (in USD)", min_value=0)
-luxury_assets_value = st.number_input("Luxury Assets Value (in USD)", min_value=0)
-bank_asset_value = st.number_input("Bank Asset Value (in USD)", min_value=0)
+residential_assets_value = st.number_input("Residential Assets Value", min_value=0)
+commercial_assets_value = st.number_input("Commercial Assets Value", min_value=0)
+luxury_assets_value = st.number_input("Luxury Assets Value", min_value=0)
+bank_asset_value = st.number_input("Bank Asset Value", min_value=0)
 
 # Categorical features
 education = st.selectbox("Education", ["Graduate", "Not Graduate"])
